@@ -149,20 +149,20 @@
 // https://api.chucknorris.io/jokes/random
 
 
-// async function fetchApiData() {
-//     try {
-//         const data = await fetch("https://api.chucknorris.io/jokes/categories");
-//         const mydata = await data.json();
-//         return mydata;
-//     }
-//     catch (err) {
-//         console.log(err);
-//     }
-// }
+async function fetchApiData() {
+    try {
+        const data = await fetch("https://api.chucknorris.io/jokes/categories");
+        const mydata = await data.json();
+        return mydata;
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
 
 
-// const finalData = fetchApiData();
+const finalData = fetchApiData();
 
-// finalData.then((res) => {
-//     console.log(res)
-// })
+finalData.then((res) => {
+    console.log(res)
+})
